@@ -14,7 +14,7 @@
 <meta property="og:site_name" content="粤湘赣，越幸运">
 <meta property="og:description" content="在nba中应用对冲交易，可以实现无风险套利。总结了以下方法，留待以后补充。 方法介绍  庄家在开出赔率以前，一般是应用各项数据推算输赢概率。由概率推导出赔率，  公式如下： 假设赔率为 odds，概率为p，那么 odds = 1/p  当然， 庄家为了赚钱，会把p调高。 即： dds_p - true_p &amp;gt; 0  当出现下列情况的时候，就可以实现套利  1(1/odds_p1)+(1/od">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-12-25T09:21:47.803Z">
+<meta property="og:updated_time" content="2018-12-25T10:57:34.117Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="彩票对冲交易">
 <meta name="twitter:description" content="在nba中应用对冲交易，可以实现无风险套利。总结了以下方法，留待以后补充。 方法介绍  庄家在开出赔率以前，一般是应用各项数据推算输赢概率。由概率推导出赔率，  公式如下： 假设赔率为 odds，概率为p，那么 odds = 1/p  当然， 庄家为了赚钱，会把p调高。 即： dds_p - true_p &amp;gt; 0  当出现下列情况的时候，就可以实现套利  1(1/odds_p1)+(1/od">
@@ -88,7 +88,8 @@
       
         <p>在nba中应用对冲交易，可以实现无风险套利。总结了以下方法，留待以后补充。</p>
 <h2 id="方法介绍"><a href="#方法介绍" class="headerlink" title="方法介绍"></a>方法介绍</h2><p>  庄家在开出赔率以前，一般是应用各项数据推算输赢概率。由概率推导出赔率，<br>  公式如下： 假设赔率为 odds，概率为p，那么 odds = 1/p<br>  当然， 庄家为了赚钱，会把p调高。 即： dds_p - true_p &gt; 0<br>  当出现下列情况的时候，就可以实现套利<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(1/odds_p1)+(1/odds_p1)+...+(1/odds_pn) &lt; 1</span><br></pre></td></tr></table></figure></p>
-<h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<h3 id="静态抓取法：在同一数据源中抓取数据，实现无风险套利"><a href="#静态抓取法：在同一数据源中抓取数据，实现无风险套利" class="headerlink" title="静态抓取法：在同一数据源中抓取数据，实现无风险套利"></a>静态抓取法：在同一数据源中抓取数据，实现无风险套利</h3><p>在 2018年12月23日的CBA比赛（福建VS上海）未开始的第一节数据：<br>|福建-2|(三项)任何其他情况|(三项)上海赢三分及以上|<br>|:–:|:–:|:–:|<br>|1.86|5.5|9.5|</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
@@ -100,7 +101,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/12/25/hedge/" data-id="cjq3i1fbf00009cmgaems9cjk" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/12/25/hedge/" data-id="cjq3mzutf00004kmgce5im9su" class="article-share-link">Share</a>
       
       
     </footer>
