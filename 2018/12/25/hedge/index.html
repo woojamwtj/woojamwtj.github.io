@@ -16,7 +16,7 @@
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://yoursite.com/images/bet365_mem3.3.png">
 <meta property="og:image" content="http://yoursite.com/images/nba_lakeman.png">
-<meta property="og:updated_time" content="2018-12-25T15:11:04.063Z">
+<meta property="og:updated_time" content="2018-12-25T15:51:38.957Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="彩票对冲交易">
 <meta name="twitter:description" content="在nba中应用对冲交易，可以实现无风险套利。总结了以下方法，留待以后补充。 方法介绍  庄家在开出赔率以前，一般是应用各项数据推算输赢概率。由概率推导出赔率，  公式如下： 假设赔率为 odds，概率为p，那么 odds = 1/p  当然， 庄家为了赚钱，会把p调高。 即： odds_p - true_p &amp;gt; 0  当出现下列情况的时候，就可以实现套利  1(1/odds_p1)+(1/o">
@@ -113,6 +113,7 @@
 <h3 id="动态抓取法，在不同数据源中抓取数据，实现套利"><a href="#动态抓取法，在不同数据源中抓取数据，实现套利" class="headerlink" title="动态抓取法，在不同数据源中抓取数据，实现套利"></a>动态抓取法，在不同数据源中抓取数据，实现套利</h3><p>虽然说是动态，但是考虑到网络延迟，实际上还是静态处理。以下例子是在2018年12月24日的湖人VS灰熊暂停间的数据。<br>在365上灰熊胜赔率 3.25， 在 bet9上湖人胜 赔率 1.89, 由以上公式可以得知有 16.4%的套利空间。</p>
 <p><img src="/images/bet365_mem3.3.png" alt="bet365灰熊胜"></p>
 <p><img src="/images/nba_lakeman.png" alt="bet9湖人胜"></p>
+<h3 id="泊松抓取法-这种套利是有风险的，如何控制是关键。"><a href="#泊松抓取法-这种套利是有风险的，如何控制是关键。" class="headerlink" title="泊松抓取法 这种套利是有风险的，如何控制是关键。"></a>泊松抓取法 这种套利是有风险的，如何控制是关键。</h3><p>根据泊松分布定律，λ=np。 在del=3， 套利比在 15%的时候应该是盈利的。<br>具体要测试del和P。</p>
 
       
     </div>
